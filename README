@@ -1,0 +1,71 @@
+# uiki!
+
+On a saturday morning, after looking for all over the internerds a wiki compiler similar to ikiwiki but with less dependencies and stuff to download and configure, since my "wiki" only had 6 pages, and didn't made any sense to me to download 6MB to write less than 20k on flat text files, I wrote this very simple wiki compiler.
+I was heavily inspired by the entries listed on this ShortestWikiContest, so I had to make my smallish-wiki-compiler as small as possible.
+
+That's the story, basically.
+Oh, why didn't I used markdown?
+Because sometimes I'm stubborn. 
+
+
+# its format is simple as this:
+
+# this is a h1
+
+## this is a h2
+
+## this is preformatted code.
+
+    print 'this line must starts with 4 spaces' 
+
+## links
+
+other wiki pages:  
+this way [[test]] or [[test|this other way]]  
+
+to other websites:  
+_ftp://debian.org_ _http://wikipedia.org_ or ((http://wikipedia.org|Wikipedia))  
+
+## images
+
+%http://www.scroogle.org/gifs/scrooge3.gif%
+
+
+## bold text
+
+only *this* word or *these words*
+
+## italic text
+
+''this'' word or ''these words''.
+
+## unnumbered lists
+
+{
+@ a
+@ b
+@ c
+}
+
+## line-breaks
+
+this is a line followed by two blank spaces  
+which 
+creates
+the 
+line
+break
+
+## horizontal lines
+
+like this:
+----
+
+## and of
+
+### course
+
+#### other heading levels
+
+##### are possible too
+
